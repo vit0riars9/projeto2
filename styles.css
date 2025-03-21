@@ -1,50 +1,129 @@
-*{
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
 }
 
-#cabecalho{
-    height: 150px;
-    background-color: rgb(245, 197, 247);
-    width: 95%;
-    margin: 0 auto;
-    text-align: center;
+/* Cabeçalho */
+.header {
+    padding: 20px;
+    background-color: #333;
 }
-#menu{
-    height: 500px;
-    width: 380px;
-    background-color: rgb(255, 125, 251);
-    float: left;
-    margin-left: 37px;
-    margin-top: 10px;
+
+.logo-image {
+    max-width: 100px;
 }
-#conteudo{
-    height: 500px;
-    width: 800px;
-    background-color: rgb(167, 33, 174);
-    float: left;
-    margin-top: 10px;
-    margin-left: 5px;
+
+/* Banner */
+.banner-container {
+    margin: 20px 0;
 }
-#lado{
-    height: 500px;
-    width: 385px;
-    background-color: rgb(114, 5, 119);
-    float: left;
-    margin-left: 5px;
-    margin-top: 10px;
-    margin-block-end: 5px;
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
-#rodape{
-    height: 100px;
-    background-color: rgb(60, 10, 65);
-    clear: both;
-    width: 95%;
-    margin: 0 auto;
-    text-align: center;
+
+/* Temporizador */
+.card-timer {
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 200px;
+}
+
+/* Botões */
+.button-temporizador {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #e64a19;
+}
+
+.button i {
+    font-size: 1.2rem;
+}
+
+/* Lista de configuração */
+.card-list {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-list-label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Toggle switch */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #888;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+    background-color: #4caf50;
+}
+
+/* Rodapé */
+.footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #333;
+    font-size: 0.9rem;
 }
 
