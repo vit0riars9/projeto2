@@ -1,7 +1,7 @@
 /* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-/* Estilos gerais */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,33 +14,11 @@ body {
     color: #ffffff;
     text-align: center;
 }
-
-/* Cabeçalho */
-.header {
-    padding: 20px;
-    background-color: #333;
-}
-
-.logo-image {
-    max-width: 100px;
-}
-
-/* Banner */
-.banner-container {
-    margin: 20px 0;
-}
-
-.title {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 /* Temporizador */
 .card-timer {
     font-size: 3rem;
     font-weight: 600;
-    background-color: #444;
+    background-color: pink;
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
