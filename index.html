@@ -1,34 +1,73 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF -8"/>
-            <title>Document</title>
-           
-            <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
- 
-        </head>
-            <body>
-
-                <div id="cabecalho">
-                    header (CABEÇALHO)
-                </div>
- 
-                <div id= "menu">
-                    nav (MENU)
-                </div>
-
-                <div id="conteudo">
-                    main (CONTEUDO DO SITE)
-                </div>
-
-                <div id="lado">
-                    aside (BLOCOS LATERAIS)
-                </div>
-
-                <div id="rodape">
-                    footer (RODAPÉ) 
-                </div>
-
-
-            </body>
-    </html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/13/91/0e/13910e1b1d05d12ea597ab7e46903f83.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js" defer></script>
+</head>
+ 
+<body>
+    <main class="app">
+        <header class="header">
+            <figure class="logo">
+                <img class="logo-image" src="/imagens/logo.png" alt="">
+            </figure>
+        </header>
+        <section class="banner-container">
+            <h1 class="title">
+                <strong>Temporizador</strong>
+            </h1>
+        </section>
+        <div class="app">
+            <div id="timer" class="card-timer"></div>
+                <ul class="card-list">
+                   <li class="card-list-item">
+                   <label class="toggle">
+                   <input class="toggle-checkbox" type="checkbox" id="alternar-musica">
+                   <div class="toggle-switch"></div>
+                   </label>
+                   </li>
+                   <li class="card-list-item">
+                   <label class="card-list-label" for="alternar-musica">
+                    Música
+                   </label>
+                   </li>
+                </ul>
+            </div>
+            <div class="button-temporizador">
+                <button id="start" class="button">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Começar</span>
+                </button>
+                <button id="pause" class="button">
+                    <i class="fa-solid fa-pause"></i>
+                    <span>Pausar</span>
+                </button>
+                <button id="reiniciar" class="button">
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <span>Reiniciar</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">
+            Projeto desenvolvido por alunos do Curso de Desenvolvimento de Sistemas do Sesi/Senai
+        </p>
+    </footer>
+ 
+</body>
+</html>
